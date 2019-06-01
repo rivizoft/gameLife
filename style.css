@@ -1,4 +1,58 @@
+body {
+  margin: 0;
+}
+
 #canvas {
   border: 3px solid black;
-  margin: 40px;
+  display: block;
+  float: left;
+}
+
+.main {
+  height: 200px;
+  margin-top: 25px;
+}
+
+.main .info {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.main .control {
+  width: 30%;
+  height: 250px;
+  float: right;
+}
+
+.main p {
+  margin-top: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.control button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  transition: .5s;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#mainButton {
+  background-color: #4cd137;
+}
+
+#step {
+  background-color: #273c75;
+}
+
+#step:hover {
+  background-color: #192a56;
 }

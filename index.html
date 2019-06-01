@@ -7,10 +7,21 @@
     <script type="text/javascript" src="js.js" defer></script>
   </head>
   <body>
+    <div class="main">
+      <div class="info">
+        <p>Canvas - width: <span id="canvasWidth">0</span>, height: <span id="canvasHeight">0</span></p>
+        <p>Field - width: <span id="fieldWidth">0</span>, height: <span id="fieldHeight">0</span></p>
+        <p>Cell - width: <span id="cellWidth">0</span>, height: <span id="cellHeight">0</span></p>
+        <p>Количество бактерий: <span id="cellsCount">0</span></p>
+        <p>Количество циклов: <span id="count">0</span></p>
+      </div>
 
-    <canvas id="canvas" width="300" height="300"></canvas>
-    <p>Количество циклов: <span id="count">0</span></p>
-    <button id="start" type="button">Start</button>
+      <canvas id="canvas" width="700" height="700"></canvas>
 
+      <div class="control">
+        <button id="mainButton" type="button">Start</button>
+        <button id="step" type="button">Step</button>
+      </div>
+    </div>
   </body>
 </html>
