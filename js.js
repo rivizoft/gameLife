@@ -1,14 +1,11 @@
 var canvas = document.getElementById('canvas');
 var ctx    = canvas.getContext('2d');
-var arr = [];
+var arr    = [];
 
-//клик
 canvas.onclick = function (event) {
   var x = event.offsetX;
   var y = event.offsetY;
-  console.log(x);
-  console.log(y);
-  x = Math.floor(x / 10); // 299 / 10 = 30
+  x = Math.floor(x / 10); // 299 / 10 = 29.9 ~ 29
   y = Math.floor(y / 10); // 300 / 10 = 30
   arr[y][x] = 1;
   console.log(arr);
